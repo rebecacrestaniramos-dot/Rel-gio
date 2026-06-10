@@ -7,6 +7,11 @@
 function carregar(){
     //alert("Bem vindo ao java script")
     var msg = window.document.getElementById('msg')
+    var img = window.document.getElementById('imagem')
 
-    msg.innerHTML = `Desenvolvendo com DOM`
+    var data = new Date()
+    var hora = data.getHours()
+    var minutos = data.getMinutes()
+  
+    msg.innerHTML = `Agora são ${hora}:${minutos}Am`
 }
